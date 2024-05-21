@@ -1,0 +1,140 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: url('background.jpeg') no-repeat center center fixed;
+    background-size: cover;
+    color: #ffffff;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 01);
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: blanchedalmond;
+    font-size: 18px;
+    padding: 10px 0;
+    display: inline-block;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ee5610;
+}
+
+nav ul li a::before {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 0;
+    background: #278cff;
+    transition: width 0.35s;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+nav ul li a:hover::before {
+    width: 100%;
+}
+
+section {
+    padding: 60px 20px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.18);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#home {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#home .intro {
+    max-width: 650px;
+}
+
+#home h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: rgb(149, 204, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px 0;
+    position: -ms-page;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    color: #f1f1ef;
+}
+
+a:hover {
+    color: #0066ff;
+}
+
+.contact-icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.contact-icons a {
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.contact-icons a:hover {
+    color: #fff;
+}
+
